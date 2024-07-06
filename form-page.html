@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form-page.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Prendre un rendez-vous</h1>
+    <form onsubmit="sendEmail()">
+        <label for="object"><span>></span>Objet</label>
+        <input id="object">
+
+        <label for="description"><span>></span>Description</label>
+        <textarea id="description" rows="6"></textarea>
+
+        <label for="Type"><span>></span>Type de rendez-vous</label>
+        <select id="Type">
+            <option>Non-selected</option>
+            <option value="consultation">Consultation</option>
+        </select>
+
+        <label for="name"><span>></span>Nom complet</label>
+        <input id="name">
+
+        <label for="email"><span>></span>Email</label>
+        <input type="email" id="email">
+
+        <label for="phone-number"><span>></span>Numéro de téléphone</label>
+        <input id="phone-number">
+
+        <label for="date"><span>></span>Date / Heure <small>(9:00am / 6:00pm)</small></label>
+        <input id="date" type="datetime-local" min="9:00" max="18:00">
+
+        <button type="submit">soumettre</button>
+    </form>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail(){
+            Email.send({
+                Host : "smtp.gmail.com",
+                Username : "majddinoumanni7@gmail.com",
+                Password : "gmail.meE5A1B2",
+                To : 'majdeddineoumanni@gmail.com',
+                From : document.getElementById('email').value,
+                Subject : "nouvelle formulaire demande de contact",
+                Body : "And this is the body"
+                }).then(
+                    message => alert(message)
+                );
+        }
+    </script>
+</body>
+</html>

@@ -3,9 +3,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>consiltation finance</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="icon" href="icons/images.png">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+     integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+     crossorigin="anonymous" referrerpolicy="no-referrer" 
+    />
+    <title>agence de réflexions futures</title>
 </head>
 <body>
-    <h1>first project</h1>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="icons/11062b_6034b3cbe60246d88250e4b24c925d06.svg">
+                <button class="owner">STE MAROCAINE D'ETUDES ET SERVICES</button>    
+            </div>
+            <input type="checkbox" id="check">
+            <label for="check" class="nav-icons">
+                <i class="fa-solid fa-x" id="close-menu"></i>
+                <i class="fa-solid fa-bars" id="open-menu"></i>
+            </label>
+            <div class="navigation">
+                <a href="" class="home">Accueil</a>
+                <a href="#service-title" class="service">
+                    Nos sercice
+                </a>
+                <a href="form-page.html" class="reserv">
+                    Prise de RDV
+                </a>
+                <a href="#footer"><button class="contact">CONTACTE</button></a>
+            </div>
+        </nav>    
+    </header>
+    <main>
+        <div class="welcome-face">
+            <div class="main-description">
+                <p class="firstp">Groupe comptable accès sur l'optimisation et à la maîtrise financière.</p>
+                <h1>Cabinet de comptabilité, audit , études et d'ingénierie financière </h1>
+                <h3>Tel : (+212) 608 07 70 35 </h3>
+                <p class="secondp">Où que vous soyez au Maroc, nous sommes la pour vous servir.</p>
+                <a href="mailto:majdeddineoumanni@gmail.com"><button class="contact-button">CONTACTEZ NOUS <img src="icons/icons8-invite-50.png" class="contact-button-icon"></button></a>
+                <a href="form-page.html">
+                    <button class="RDV-button"><img src="icons/icons8-meeting-time-50.png" class="RDV-button-icon">Pris de RDV</button>
+                </a>
+            </div>
+            <div class="right-side">
+                <img class="main-photo" src="photos/volkan-olmez-aG-pvyMsbis-unsplash.jpg" alt="img.jpg"> 
+            </div>
+        </div>
+        <h1 id="service-title">Nos service</h1>
+        <p class="service-describe">"Nom de l'entreprise" Est une Filiale du Cabinet Comptable le plus Renommé à Rabat.</p>
+        <div class="service-cards">
+            <a href=""><div class="card">
+                <img src="icons/icon-create-card.png" class="card-icon">
+                <h2>Creation d'entreprise</h2>
+                <p>commencez par créer votre entreprise et excellez dans le monde des affaires</p>
+                <button>Contactez Nous</button>
+            </div></a>
+            <a href=""><div class="card">
+                <img src="icons/icons-companyPlace-card.png" class="card-icon">
+                <h2>Quartier général</h2>
+                <p>notre siège social à Rabat, très prochainement dans toutes les grand villes du Maroc</p>
+                <button>Contactez Nous</button>
+            </div></a>
+            <a href=""><div class="card">
+                <img src="icons/icons8-accountant-card.png" class="card-icon">
+                <h2>Comptabilité</h2>
+                <p>Améliorez votre entreprise avec des solutions comptables modernes.</p>
+                <button>Contactez Nous</button>
+            </div></a>
+            <a href=""><div class="card">
+                <img src="icons/icons-finance-card.png" class="card-icon">
+                <h2>Etude financière</h2>
+                <p>
+                    Nous travaillerons avec diligence pour garantir le bon déroulement des opérations financières de votre entreprise.
+                    De plus, nous mettrons en œuvre des stratégies pour améliorer la performance globale de votre entreprise.
+                </p>
+                <button>Contactez Nous</button>
+            </div></a>
+            <a href=""><div class="card">
+                <img src="icons/icons-law-icon.png" class="card-icon">
+                <h2>L'aide juridique</h2>
+                <p>Vous aider avec tous les papiers juridiques et changements juridiques et vous développer sur d'autres territoires</p>
+                <button>Contactez Nous</button>
+            </div></a>
+        </div>
+    </main>
+    <hr>
+    <footer id="footer">
+        <div class="personal-info-card">
+            <i class="fa-solid fa-location-dot" id="personal-info-card-title-photo"></i>
+            <h2>Nos Addresses a Rabat</h2>
+            <br>
+            <br>
+            <p>#neighbor-hood,</p>
+            <p> #street, </p>
+            <p>bulding,</p>
+            <p>#flat-Number</p>
+        </div>
+        <div class="personal-info-card">
+            <i class="fa-solid fa-phone" id="personal-info-card-title-photo"></i>
+            <h2>Nos numéros de TéléPhone</h2>
+            <br>
+            <br>
+            <p>ex:(+212) 6 08 03 44 35</p>
+            <p>ex:(+212) 5 44 23 56 12r</p>
+            <p></p>
+        </div>
+        <div class="personal-info-card">
+            <i class="fa-solid fa-comments" id="personal-info-card-title-photo"></i>
+            <h2>Contactez-nous</h2>
+            <br>
+            <br>
+            <ul>
+                <a href=""><li><i class="fa-brands fa-whatsapp" id="social-media-icon"></i>Whatsapp</li></a>
+                <a href=""><li><i class="fa-brands fa-square-twitter" id="social-media-icon"></i>Twitter(X)</li></a>
+                <a href=""><li><i class="fa-brands fa-instagram" id="social-media-icon"></i>Instagram</li></a>
+            </ul>
+        </div>
+    </footer>
 </body>
 </html>
